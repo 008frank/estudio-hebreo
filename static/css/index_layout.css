@@ -1,0 +1,42 @@
+#hebLet {
+    font-size: 22px;
+}
+button {
+    width: 30px;
+    height: 30px;
+}
+#space {
+    width: 80px;
+    height: 30px;
+}
+textarea {
+    width: 232px;
+}
+
+.main-div {
+    display: grid;
+    grid-template-areas: 'alph button';
+}
+
+.alpha-div {
+    grid-area: alph;
+}
+
+.buttons-div {
+    grid-area: button;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+    .main-div {
+        grid-template-areas: 
+        'alph' 
+        'button';
+    }
+    .buttons-div {
+        margin-top: 30px;
+    }
+}
