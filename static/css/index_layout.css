@@ -1,9 +1,21 @@
+table {
+    width: 100%;
+}
+table th {
+    background-color: rgba(211, 210, 210, 0.623);
+}
+tbody td {
+    text-align: center;
+    background-color: rgba(245, 242, 242, 0.685);
+}
+
 #hebLet {
     font-size: 22px;
 }
 button {
     width: 30px;
     height: 30px;
+    margin-bottom: 10px;
 }
 #space {
     width: 80px;
@@ -14,12 +26,21 @@ textarea {
 }
 
 .main-div {
-    display: grid;
-    grid-template-areas: 'alph button';
+    display: flex;
+    /* grid-template-areas: 'alph vocal'; */
 }
 
 .alpha-div {
     grid-area: alph;
+    width: 40%;
+    text-align: center;
+}
+
+.vocals-div {
+    grid-area: vocal;
+    text-align: center;
+    /* margin-left: 50px; */
+
 }
 
 .buttons-div {
@@ -27,16 +48,70 @@ textarea {
 }
 
 
+/* VOCAL IMAGES */
+.a-div {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+.e-div {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+.i-div {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+.o-div {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+.u-div {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+
+img {
+    grid-area: imgs;
+    height: 100px;
+    width: 100px;
+}
+
 
 
 /* RESPONSIVE */
 @media (max-width: 750px) {
     .main-div {
+        display: grid;
         grid-template-areas: 
-        'alph' 
+        'alph'
+        'vocal'
         'button';
+    }
+    .alpha-div {
+        width: 100%;
+    }
+    .vocals-div {
+        margin-top: 30px;
+        margin-left: 0;
     }
     .buttons-div {
         margin-top: 30px;
+    }
+
+    .a-div {margin-left: 0;}
+    .e-div {margin-left: 0;}
+    .i-div {margin-left: 0;}
+    .o-div {margin-left: 0;}
+    .u-div {margin-left: 0;}
+
+
+    img {
+        height: 60px;
+        width: 60px;
     }
 }
