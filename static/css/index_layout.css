@@ -1,3 +1,41 @@
+body {
+    margin: 0;
+}
+
+.menu-header {
+    display: none;
+    width: 100%;
+    background-color: rgba(235, 233, 233, 0.589);
+    align-items: center;
+}
+.option-div {
+    width: 80%;
+    text-align: right;
+}
+a {
+    margin-left: 15%;
+}
+
+
+/* PROFILE DIV */
+.profile-div {
+    display: flex;
+}
+.profile-img {
+    width: 65%;
+    height: 100vh;
+    background-image: url(/static/css/imgs/israel-flag.jpg);
+    background-size: cover;
+}
+.main-menu-div {
+    width: 35%;
+    text-align: center;
+    background-color: rgb(226, 224, 224);
+    margin: 15px;
+}
+
+
+
 table {
     width: 100%;
 }
@@ -27,7 +65,7 @@ textarea {
 
 .main-div {
     display: flex;
-    /* grid-template-areas: 'alph vocal'; */
+    margin-inline: 10px;
 }
 
 .alpha-div {
@@ -84,7 +122,14 @@ img {
 
 
 /* RESPONSIVE */
-@media (max-width: 750px) {
+@media (max-width: 1100px) {
+    .profile-img {
+        width: 100%;
+        background-position: center;
+    }
+    .main-menu-div {
+        display: none;
+    }
     .main-div {
         display: grid;
         grid-template-areas: 
