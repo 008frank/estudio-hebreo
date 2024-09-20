@@ -19,7 +19,29 @@
     </div>
 
     <div class="profile-div">
-        <div class="profile-img"></div>
+        <div class="profile-img">
+            <div class="profile-header">
+                <a href="" id="login">Login</a>
+                <div class="menu-img-div" id="menu_button" onclick="optionButton()"></div>
+            </div>
+            <hr>
+            <div class="responsive-menu-div">
+                <div class="responsive-menu" id="container">
+                    <div class="menu-options" id="options">
+                        <a href="" class="op-a" style="margin-top: 20px;">אלפ-בית (Alef-Bet)</a>
+                        <a href="" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מלים (Milim)</a>
+                        <a href="" class="op-a" style="margin-bottom: 20px;">תרגילים (Targuilim)</a>
+                    </div>
+                </div>
+                <div class="responsive-title">
+                    <div class="profile-title">
+                        <p id="heb-title">ספר-עברית<br>
+                            <span>Sefer-Ivrit</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="main-menu-div">
             <h1>Hebreo Online</h1>
             <div class="profile-options">
@@ -232,4 +254,16 @@
         </div> -->
     </div>
 </body>
+<script>
+    function optionButton() {
+        var opt = document.getElementById("options");
+
+        if (opt.style.display == 'flex') {
+            opt.style.display = 'none';
+        } 
+        else {
+            opt.style.display = 'flex';
+        }
+    }
+</script>
 </html>

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 .menu-header {
@@ -27,12 +28,22 @@ a {
     background-image: url(/static/css/imgs/israel-flag.jpg);
     background-size: cover;
 }
+.profile-header {
+    display: none;
+}
+.menu-img-div {
+    display: none;
+}
+hr {
+    display: none;
+}
 .main-menu-div {
     width: 35%;
     text-align: center;
     background-color: rgb(226, 224, 224);
     margin: 15px;
 }
+.responsive-menu-div {display: none;}
 
 
 
@@ -127,9 +138,78 @@ img {
         width: 100%;
         background-position: center;
     }
+    .profile-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .menu-img-div {
+        display: block;
+        background-image: url(/static/css/imgs/menu-icon.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        margin-right: 10px;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+    #login {
+        color: rgba(0, 0, 255, 0.514);
+        font-size: 21px;
+        text-decoration: none;
+    }
+    #login:hover {
+        color: blue;
+    }
+    hr {
+        display: block;
+        margin-inline: 5px;
+        border-color: rgba(197, 197, 197, 0.418);
+    }
     .main-menu-div {
         display: none;
     }
+
+    /* RESPONSIVE MENU */
+    .responsive-menu-div {
+        display: block;
+        width: 100%;
+        height: 85%;
+    }
+    .responsive-menu {
+        display: block;
+        height: 34%;
+    }
+    .menu-options {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(167, 167, 167, 0.25);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 5px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .op-a {
+        margin-inline: 0;
+        color: rgb(255, 254, 254);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .responsive-title {
+        height: 75%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .profile-title {text-align: center;}
+    #heb-title {color: white; font-size: 38px;}
+    span {color: white; font-size: 23px;}
+
+
     .main-div {
         display: grid;
         grid-template-areas: 
