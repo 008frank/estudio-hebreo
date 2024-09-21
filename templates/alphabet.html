@@ -3,56 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/index_layout.css') }}">
-    <title>Hebreo</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/alpha_index.css') }}">
+    <title>Libro Hebreo</title>
 </head>
 <body>
     <div>
         <div class="menu-header">
             <h1 style="padding-right: 20px;">Hebreo Online</h1>
             <div class="option-div">
-                <a href="{{ url_for('alphabet') }}">Alfabeto</a>
+                <a href="">Alfabeto</a>
                 <a href="">Vocabulario</a>
                 <a href="">Practica</a>
             </div>
         </div>
     </div>
 
-    <div class="profile-div">
+    <div class="profile-div"></div>
         <div class="profile-img">
             <div class="profile-header">
-                <a href="" id="login">Login</a>
-                <div class="menu-img-div" id="menu_button" onclick="optionButton()"></div>
+                <div class="logo">
+                    <div class="mag-david-img"></div>
+                </div>
+                <div class="mybutton">   
+                    <div class="menu-img-div" id="menu_button" onclick="optionButton()"></div>
+                </div>
             </div>
             <hr>
             <div class="responsive-menu-div">
                 <div class="responsive-menu" id="container">
                     <div class="menu-options" id="options">
-                        <a href="{{ url_for('alphabet') }}" class="op-a" style="margin-top: 20px;">אלפ-בית (Alef-Bet)</a>
+                        <a href="{{ url_for('index') }}" class="op-a" style="margin-top: 20px;">דף הבית (Daf habayit)</a>
                         <a href="" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מלים (Milim)</a>
                         <a href="" class="op-a" style="margin-bottom: 20px;">תרגילים (Targuilim)</a>
                     </div>
                 </div>
-                <div class="responsive-title">
-                    <div class="profile-title">
-                        <p id="heb-title">ספר-עברית<br>
-                            <span>Sefer-Ivrit</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-menu-div">
-            <h1>Hebreo Online</h1>
-            <div class="profile-options">
-
             </div>
         </div>
     </div>
-
-    <!-- <div class="main-div">
+    
+    <div class="main-div">
         <div class="alpha-div">
-            <h2>Alfabeto</h2>
+            <h2>אלפ-בות / Alef-Bet</h2>
             <table>
                 <tr>
                     <th>Hebreo</th>
@@ -176,7 +167,7 @@
         </div>
 
         <div class="vocals-div">
-            <h2>Vocales</h2>
+            <h2>ניקדות / Niqudot</h2>
             <div class="a-div">
                 <h4>A: </h4>
                 <div class="a-igm"><img src="/static/css/imgs/kamatz.jpeg" alt=""></div>
@@ -214,7 +205,6 @@
             </div>
         </div>
 
-    </div> -->
 </body>
 <script>
     function optionButton() {
