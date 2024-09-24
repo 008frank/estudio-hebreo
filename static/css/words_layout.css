@@ -2,7 +2,22 @@ body {
     font-family: sans-serif;
 }
 
-
+/* TABLE */
+table, td, th {
+    border: 1px solid;
+  }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th {
+    background-color: blue;
+    color: white;
+    border-color: black;
+}
+tbody td {
+    text-align: center;
+}
 
 
 @media (max-width: 1100px) {
