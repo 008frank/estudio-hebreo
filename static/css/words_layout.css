@@ -25,7 +25,6 @@ tbody td {
         display: block;
         width: 100%;
         position: fixed;
-        overflow: hidden;
         top: 0;
         background-color: white;
         
@@ -35,7 +34,7 @@ tbody td {
         background-position: center;
     }
     .profile-header {
-        width: 98%;
+        width: 96%;
         display: grid;
         grid-template-areas: 'log but';
         align-items: center;
@@ -64,7 +63,7 @@ tbody td {
     hr {
         display: block;
         margin-inline: 5px;
-        width: 97%;
+        width: 94%;
         border-color: rgba(197, 197, 197, 0.418);
     }
     .responsive-menu-div {
