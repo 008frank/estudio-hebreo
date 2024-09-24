@@ -21,6 +21,14 @@ tbody td {
 
 
 @media (max-width: 1100px) {
+    .profile-div {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        
+    }
     .profile-img {
         width: 100%;
         background-position: center;
@@ -101,5 +109,9 @@ tbody td {
         width: 150px; 
         margin-bottom: 8px;
     } 
+
+    .table-div {
+        margin-top: 190px;
+    }
 
 }
