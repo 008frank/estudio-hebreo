@@ -12,5 +12,10 @@ def index():
 def alphabet():
     return render_template('alphabet.html')
 
+
+@app.route('/words')
+def words():
+    return render_template('words.html')
+
 if __name__=='__main__':
     app.run(debug=True)

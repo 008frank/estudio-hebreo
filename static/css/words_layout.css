@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 1100px) {
+    .profile-img {
+        width: 100%;
+        background-position: center;
+    }
+    .profile-header {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'log but';
+        align-items: center;
+        /* justify-content: right; */
+    }
+    .logo {grid-area: log;}
+    .mybutton {grid-area: but; display: flex; justify-content: right;}
+    
+    .mag-david-img {
+        display: block;
+        background-image: url(/static/css/imgs/magen-david.png);
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+        margin-top: 5px;
+    }
+    .menu-img-div {
+        display: block;
+        background-image: url(/static/css/imgs/menu-black.png);
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    hr {
+        display: block;
+        margin-inline: 5px;
+        border-color: rgba(197, 197, 197, 0.418);
+    }
+    /* RESPONSIVE MENU */
+    .responsive-menu-div {
+        display: block;
+        position: absolute;
+        width: 98%;
+        height: 85%;
+        margin: auto;
+    }
+    .responsive-menu {
+        display: block;
+        height: 34%;
+    }
+    .menu-options {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(167, 167, 167, 0.25);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 5px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .op-a {
+        margin-inline: 0;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .searcher-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .searcher-title {
+        display: grid;
+        width: 100%;
+        text-align: center;
+    }
+
+    select {
+        width: 150px; 
+        margin-bottom: 8px;
+    }
+
+}

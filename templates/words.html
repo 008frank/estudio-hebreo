@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/words_layout.css') }}">
+    <title>Hebreo</title>
+</head>
+<body>
+    <div class="profile-div"></div>
+        <div class="profile-img">
+            <div class="profile-header">
+                <div class="logo">
+                    <div class="mag-david-img"></div>
+                </div>
+                <div class="mybutton">   
+                    <div class="menu-img-div" id="menu_button" onclick="optionButton()"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="responsive-menu-div">
+                <div class="responsive-menu" id="container">
+                    <div class="menu-options" id="options">
+                        <a href="{{ url_for('index') }}" class="op-a" style="margin-top: 20px;">דף הבית (Daf habayit)</a>
+                        <a href="" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מלים (Milim)</a>
+                        <a href="" class="op-a" style="margin-bottom: 20px;">תרגילים (Targuilim)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div>
+        <div class="searcher-div">
+            <div class="searcher-title">
+                <p style="font-size: 22px; margin-bottom: 0; margin-top: 10px;">אוצר מילים</p>
+                <p style="margin-top: 0.5px;">Otzar milim</p>
+            </div>
+            <div class="search-content">
+                <select name="" id="">
+                    <option value="a">Opcion 1</option>
+                    <option value="b">Opcion 2</option>
+                    <option value="c">Opcion 3</option>
+                </select>
+                <button type="button" id="search-btn">Buscar</button>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+</body>
+<script>
+    function optionButton() {
+        var opt = document.getElementById("options");
+
+        if (opt.style.display == 'flex') {
+            opt.style.display = 'none';
+        } 
+        else {
+            opt.style.display = 'flex';
+        }
+    }
+</script>
+</html>
