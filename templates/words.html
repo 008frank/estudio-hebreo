@@ -18,11 +18,11 @@
                 </div>
             </div>
             <hr>
-            <div class="responsive-menu-div">
+            <div class="responsive-menu-div" id="rp-div">
                 <div class="responsive-menu" id="container">
                     <div class="menu-options" id="options">
                         <a href="{{ url_for('index') }}" class="op-a" style="margin-top: 20px;">דף הבית (Daf habayit)</a>
-                        <a href="" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מלים (Milim)</a>
+                        <a href="{{ url_for('alphabet') }}" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">אלפ-בית (Alef-Bet)</a>
                         <a href="" class="op-a" style="margin-bottom: 20px;">תרגילים (Targuilim)</a>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
     <div>
         <div class="searcher-div">
             <div class="searcher-title">
-                <p style="font-size: 22px; margin-bottom: 0; margin-top: 10px;">אוצר מילים</p>
+                <p style="font-size: 22px; margin-bottom: 0; margin-top: 10px; font-weight: bold;">אוצר מילים</p>
                 <p style="margin-top: 0.5px;">Otzar milim</p>
             </div>
             <div class="search-content">
@@ -42,7 +42,7 @@
                     <option value="b">Opcion 2</option>
                     <option value="c">Opcion 3</option>
                 </select>
-                <button type="button" id="search-btn">Buscar</button>
+                <button type="button" id="search-btn">לחפּשׂ</button>
             </div>
         </div>
         <hr>
@@ -51,13 +51,13 @@
 </body>
 <script>
     function optionButton() {
-        var opt = document.getElementById("options");
+        var opt = document.getElementById("rp-div");
 
-        if (opt.style.display == 'flex') {
+        if (opt.style.display == 'block') {
             opt.style.display = 'none';
         } 
         else {
-            opt.style.display = 'flex';
+            opt.style.display = 'block';
         }
     }
 </script>

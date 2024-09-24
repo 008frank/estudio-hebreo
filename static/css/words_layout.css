@@ -3,6 +3,8 @@ body {
 }
 
 
+
+
 @media (max-width: 1100px) {
     .profile-img {
         width: 100%;
@@ -13,7 +15,6 @@ body {
         display: grid;
         grid-template-areas: 'log but';
         align-items: center;
-        /* justify-content: right; */
     }
     .logo {grid-area: log;}
     .mybutton {grid-area: but; display: flex; justify-content: right;}
@@ -40,9 +41,8 @@ body {
         margin-inline: 5px;
         border-color: rgba(197, 197, 197, 0.418);
     }
-    /* RESPONSIVE MENU */
     .responsive-menu-div {
-        display: block;
+        display: none;
         position: absolute;
         width: 98%;
         height: 85%;
@@ -53,7 +53,7 @@ body {
         height: 34%;
     }
     .menu-options {
-        display: none;
+        display: flex;
         flex-direction: column;
         text-align: center;
         background: rgba(167, 167, 167, 0.25);
@@ -85,6 +85,6 @@ body {
     select {
         width: 150px; 
         margin-bottom: 8px;
-    }
+    } 
 
 }

@@ -166,6 +166,7 @@ img {
     hr {
         display: block;
         margin-inline: 5px;
+        margin-top: 2px;
         border-color: rgba(197, 197, 197, 0.418);
     }
     .main-menu-div {
@@ -206,8 +207,8 @@ img {
         justify-content: center;
     }
     .profile-title {text-align: center;}
-    #heb-title {color: white; font-size: 38px;}
-    span {color: white; font-size: 23px;}
+    #heb-title {color: white; font-size: 38px; margin-bottom: 0;}
+    span {color: white; font-size: 23px; margin-top: 0;}
 
 
     .main-div {
