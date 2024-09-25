@@ -37,12 +37,13 @@
                     <p style="margin-top: 0.5px;">Otzar milim</p>
                 </div>
                 <div class="search-content">
-                    <select name="" id="">
-                        <option value="">כִּנּוּי גּוּף (Kinúi Guf)</option>
-                        <option value="">מִשְׁפָּחָה (Mishpajah)</option>
-                        <option value="">Opcion 3</option>
+                    <select name="" id="mySelect" onchange="choice(this)">
+                        <option value="">-------</option>
+                        <option value="section-1">כִּנּוּי גּוּף (Kinúi Guf)</option>
+                        <option value="section-2">מִשְׁפָּחָה (Mishpajah)</option>
+                        <option value="section-3">צְבָעִים (Tzvaim)</option>
                     </select>
-                    <button type="button" id="search-btn">לחפּשׂ</button>
+                    <!-- <button type="button" id="search-btn">לחפּשׂ</button> -->
                 </div>
             </div>
             <hr>
@@ -51,6 +52,7 @@
 
     
     <div class="table-div">
+        
         <section id="section-1">
             <p style="font-size: 22px; font-weight: bold;">כִּנּוּי גּוּף (Kinúi Guf)</p>
             <table>
@@ -196,6 +198,75 @@
                 </tbody>
             </table>
         </section>
+
+        <section id="section-3">
+            <p style="font-size: 22px; font-weight: bold;">צְבָעִים (Tzvaim)</p>
+            <table>
+                <tr>
+                    <th>Hebreo</th>
+                    <th>Español</th>
+                    <th>Sonido</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>צֶבַע</td>
+                        <td>Color</td>
+                        <td>Tzeva</td>
+                    </tr>
+                    <tr>
+                        <td>לבן</td>
+                        <td>Blanco</td>
+                        <td>Lavan</td>
+                    </tr>
+                    <tr>
+                        <td>שחור</td>
+                        <td>Negro</td>
+                        <td>Shajor</td>
+                    </tr>
+                    <tr>
+                        <td>אדום</td>
+                        <td>Rojo</td>
+                        <td>Adom</td>
+                    </tr>
+                    <tr>
+                        <td>ירוק</td>
+                        <td>Verde</td>
+                        <td>Yarok</td>
+                    </tr>
+                    <tr>
+                        <td>כחול</td>
+                        <td>Azul</td>
+                        <td>Kajal</td>
+                    </tr>
+                    <tr>
+                        <td>צהוב</td>
+                        <td>Amarillo</td>
+                        <td>Tzahov</td>
+                    </tr>
+                    <tr>
+                        <td>ורוד</td>
+                        <td>Rosa</td>
+                        <td>Varod</td>
+                    </tr>
+                    <tr>
+                        <td>כתום</td>
+                        <td>Anaranjado</td>
+                        <td>Katom</td>
+                    </tr>
+                    <tr>
+                        <td>סגול</td>
+                        <td>Morado</td>
+                        <td>Segol</td>
+                    </tr>
+                    <tr>
+                        <td>אפור</td>
+                        <td>Gris</td>
+                        <td>Afor</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
     </div>
 
 </body>
@@ -209,6 +280,18 @@
         else {
             opt.style.display = 'block';
         }
+    }
+
+    function choice(select) {
+        var sel = select.options[select.selectedIndex].value;
+        var str = sel.toString();
+
+        var elem = document.getElementById(str);
+        elem.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "center"
+        });
     }
 </script>
 </html>
