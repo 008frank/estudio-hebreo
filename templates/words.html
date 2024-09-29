@@ -21,9 +21,9 @@
             <div class="responsive-menu-div" id="rp-div">
                 <div class="responsive-menu" id="container">
                     <div class="menu-options" id="options">
-                        <a href="{{ url_for('index') }}" class="op-a" style="margin-top: 20px;">אִתְחוּל (Itjul)</a>
-                        <a href="{{ url_for('alphabet') }}" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">אָלֵפ-בֵּית (Alef-Bet)</a>
-                        <a href="" class="op-a" style="margin-bottom: 20px;">תָּרְגִּילִים (Targuilim)</a>
+                        <a href="{{ url_for('index') }}" id="a-1" class="op-a" style="margin-top: 20px;">אִתְחוּל (Itjul)</a>
+                        <a href="{{ url_for('alphabet') }}" id="a-2" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">אָלֵפ-בֵּית (Alef-Bet)</a>
+                        <a href="" class="op-a" id="a-3" style="margin-bottom: 20px;">תָּרְגִּילִים (Targuilim)</a>
                     </div>
                 </div>
             </div>
@@ -344,7 +344,14 @@
         var opt = document.getElementById("rp-div");
 
         if (opt.style.display == 'block') {
-            opt.style.display = 'none';
+            opt.animate([
+                {transform: "scaleX(100%)", opacity: 1},
+                {transform: "scaleX(0%)", opacity: 0}
+            ], {duration: 500},
+            );
+            setTimeout(function() {
+                opt.style.display = "none";
+            }, 400);
         } 
         else {
             opt.style.display = 'block';

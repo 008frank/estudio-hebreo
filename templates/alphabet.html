@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div class="profile-div"></div>
+    <div class="profile-div">
         <div class="profile-img">
             <div class="profile-header">
                 <div class="logo">
@@ -32,9 +32,9 @@
             <div class="responsive-menu-div">
                 <div class="responsive-menu" id="container">
                     <div class="menu-options" id="options">
-                        <a href="{{ url_for('index') }}" class="op-a" style="margin-top: 20px;">אִתְחוּל (Itjul)</a>
-                        <a href="{{ url_for('words') }}" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מִלִים (Milim)</a>
-                        <a href="" class="op-a" style="margin-bottom: 20px;">תָּרְגִּילִים (Targuilim)</a>
+                        <a href="{{ url_for('index') }}" id="a-1" class="op-a" style="margin-top: 20px;">אִתְחוּל (Itjul)</a>
+                        <a href="{{ url_for('words') }}" id="a-2" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מִלִים (Milim)</a>
+                        <a href="" class="op-a" id="a-3" style="margin-bottom: 20px;">תָּרְגִּילִים (Targuilim)</a>
                     </div>
                 </div>
             </div>
@@ -263,13 +263,20 @@
 </body>
 <script>
     function optionButton() {
-        var opt = document.getElementById("options");
+        var opt = document.getElementById("container");
 
-        if (opt.style.display == 'flex') {
-            opt.style.display = 'none';
+        if (opt.style.display == 'block') {
+            opt.animate([
+                {transform: "scaleX(100%)", opacity: 1},
+                {transform: "scaleX(0%)", opacity: 0}
+            ], {duration: 500},
+            );
+            setTimeout(function() {
+                opt.style.display = "none";
+            }, 400);
         } 
         else {
-            opt.style.display = 'flex';
+            opt.style.display = 'block';
         }
     }
 </script>
