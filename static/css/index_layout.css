@@ -179,20 +179,51 @@ img {
         height: 83%;
     }
     .responsive-menu {
-        display: block;
-        height: 34%;
-    }
-    .menu-options {
         display: none;
+        height: 34%;
+        width: 100%;
+        float: right;
+        position: absolute;
         flex-direction: column;
         text-align: center;
-        background: rgba(167, 167, 167, 0.25);
+        animation: anim 1s;
+        transform-origin: 100% 50%;
+
+        /* COLOR */
+        background: rgba(96, 106, 247, 0.25);
+        /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 5px;
+        /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    }
+    .menu-options {
+        /* display: none;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(96, 106, 247, 0.25);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 5px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+        display: grid;
+        gap: 8px;
+        text-align: center;
+        
+        /* float: right;
+        display: none;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        animation: anim 1s;
+        transform-origin: 100% 50%; */
     }
+    #a-1 {animation: fadeIn 0.5s; transform-origin: 100% 50%;}
+    #a-2 {animation: fadeIn 1s; transform-origin: 100% 50%;}
+    #a-3 {animation: fadeIn 1.5s; transform-origin: 100% 50%;}
+
     .op-a {
         margin-inline: 0;
         color: rgb(255, 254, 254);
@@ -200,7 +231,7 @@ img {
         font-size: 20px;
     }
     .responsive-title {
-        height: 75%;
+        height: 100%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -238,5 +269,28 @@ img {
     img {
         height: 60px;
         width: 60px;
+    }
+
+    /* KEYFRAMES */
+    @keyframes anim {
+        0% {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+        100% {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+        100% {
+            transform: scaleX(1);
+            opacity: 1;
+        }
     }
 }

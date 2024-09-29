@@ -25,12 +25,12 @@
                 <div class="menu-img-div" id="menu_button" onclick="optionButton()"></div>
             </div>
             <hr>
-            <div class="responsive-menu-div">
+            <div class="responsive-menu-div" id="resp-div">
                 <div class="responsive-menu" id="container">
                     <div class="menu-options" id="options">
-                        <a href="{{ url_for('alphabet') }}" class="op-a" style="margin-top: 20px;">אָלֵפ-בֵּית (Alef-Bet)</a>
-                        <a href="{{ url_for('words') }}" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מִלִים (Milim)</a>
-                        <a href="" class="op-a" style="margin-bottom: 20px;">תָּרגִּילִים (Targuilim)</a>
+                        <a href="{{ url_for('alphabet') }}" id="a-1" class="op-a" style="margin-top: 20px;">אָלֵפ-בֵּית (Alef-Bet)</a>
+                        <a href="{{ url_for('words') }}" id="a-2"  class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מִלִים (Milim)</a>
+                        <a href="" id="a-3"  class="op-a" style="margin-bottom: 20px;">תָּרגִּילִים (Targuilim)</a>
                     </div>
                 </div>
                 <div class="responsive-title">
@@ -53,13 +53,20 @@
 </body>
 <script>
     function optionButton() {
-        var opt = document.getElementById("options");
+        var opt = document.getElementById("container");
 
-        if (opt.style.display == 'flex') {
-            opt.style.display = 'none';
+        if (opt.style.display == 'block') {
+            opt.animate([
+                {transform: "scaleX(100%)", opacity: 1},
+                {transform: "scaleX(0%)", opacity: 0}
+            ], {duration: 500},
+            );
+            setTimeout(function() {
+                opt.style.display = "none";
+            }, 400);
         } 
         else {
-            opt.style.display = 'flex';
+            opt.style.display = 'block';
         }
     }
 </script>
