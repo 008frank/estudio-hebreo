@@ -188,10 +188,12 @@ img {
         transform-origin: 100% 50%;
 
         /* COLOR */
-        background: rgba(96, 106, 247, 0.25);
+        /* background: rgba(96, 106, 247, 0.25);
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
-        border-radius: 5px;
+        border-radius: 5px; */
+        background-image: url(/static/css/imgs/pergamino.jpg);
+        background-size: cover;
     }
     .menu-options {
         display: grid;
@@ -207,7 +209,6 @@ img {
         color: black;
         text-decoration: none;
         font-size: 20px;
-        font-weight: bold;
     }
     .responsive-title {
         height: 75%;

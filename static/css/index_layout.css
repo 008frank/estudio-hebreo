@@ -190,12 +190,12 @@ img {
         transform-origin: 100% 50%;
 
         /* COLOR */
-        background: rgba(96, 106, 247, 0.25);
-        /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+        /* background: rgba(96, 106, 247, 0.25);
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
-        border-radius: 5px;
-        /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+        border-radius: 5px; */
+        background-image: url(/static/css/imgs/pergamino.jpg);
+        background-size: cover;
     }
     .menu-options {
         /* display: none;
@@ -226,7 +226,8 @@ img {
 
     .op-a {
         margin-inline: 0;
-        color: rgb(255, 254, 254);
+        /* color: rgb(255, 254, 254); */
+        color: black;
         text-decoration: none;
         font-size: 20px;
     }
