@@ -188,9 +188,9 @@ img {
         transform-origin: 100% 50%;
 
         /* COLOR */
-        background: rgba(173, 173, 173, 0.25);
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
+        background: linear-gradient( 93.2deg,  rgba(24,95,246,0.3) 14.4%, rgba(27,69,166,0.3) 90.8% );
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 5px );
         border-radius: 10px;
     }
     .menu-options {
