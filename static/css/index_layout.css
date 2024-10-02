@@ -190,12 +190,11 @@ img {
         transform-origin: 100% 50%;
 
         /* COLOR */
-        /* background: rgba(96, 106, 247, 0.25);
+        background: rgba( 255, 255, 255, 0.25 );
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
-        border-radius: 5px; */
-        background-image: url(/static/css/imgs/pergamino.jpg);
-        background-size: cover;
+        border-radius: 10px;
+        
     }
     .menu-options {
         /* display: none;
